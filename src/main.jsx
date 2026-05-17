@@ -168,7 +168,25 @@ function App() {
             </div>
           </div>
         </section>
+<section className="bg-[#111] px-5 py-20">
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-10 text-center">
+      <p className="text-sm font-black uppercase tracking-[0.35em] text-[#d6b45a]">
+        Featured Work
+      </p>
+      <h2 className="mt-3 text-4xl font-black uppercase text-white md:text-6xl">
+        Watch Our Work
+      </h2>
+    </div>
 
+    <video
+      src={landscapeVideo}
+      controls
+      playsInline
+      className="w-full rounded-[2rem] border border-[#d6b45a]/40 shadow-2xl"
+    />
+  </div>
+</section>
         <section id="gallery" className="lightSection">
           <div className="container">
             <div className="sectionHead">
