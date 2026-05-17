@@ -7,6 +7,9 @@ import {
 } from "lucide-react";
 import "./style.css";
 import landscapeVideo from "./assets/videos/landscape-showcase.mp4";
+import heroLandscape from "./assets/photos/3B921856-19B2-4DE4-8D57-9E7F300E13C3.jpg";
+import mulchProject from "./assets/photos/6EC7D425-0B47-4244-9D69-D614ECF89D6B.jpg";
+import treeInstall from "./assets/photos/15E1ED6D-2030-4B93-92DA-EEA03352A700.jpg";
 const WoodruffsLogo = ({ className = "" }) => (
   <svg viewBox="0 0 160 260" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
     <defs>
