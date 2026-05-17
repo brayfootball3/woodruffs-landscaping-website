@@ -85,7 +85,7 @@ function App() {
           <div className="container heroGrid">
             <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <p className="pill">Premium Outdoor Services</p>
-              <h1>Lawn Care That Makes Your Property Look Expensive.</h1>
+              <h1>Lawn Care That Makes Your Property Look Sensational.</h1>
               <p className="heroText">Clean lawn maintenance, landscaping, mulch, sod, flower beds, aeration, and commercial property care with a dark gray, black, and gold look that matches your brand.</p>
               <div className="actions">
                 <Button href="#contact"><CalendarDays size={20} /> Request Free Estimate</Button>
