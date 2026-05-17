@@ -102,7 +102,11 @@ function App() {
               <div className="photoPlaceholder">
                 <div>
                   <p>Before & After Ready</p>
-                  <h3>Replace this with your best yard photo</h3>
+                  <img
+  src={heroLandscape}
+  alt="Woodruff's Landscaping Project"
+  className="h-full w-full object-cover rounded-[2rem]"
+/>
                 </div>
               </div>
               <div className="checks">
@@ -197,9 +201,33 @@ function App() {
               <Button href="#contact" variant="dark">Book Your Yard</Button>
             </div>
             <div className="galleryGrid">
-              {["Lawn Maintenance", "Mulch Installation", "Sod & Lawn Repair", "Commercial Cleanup", "Flower Beds", "Shrub Trimming"].map((item, index) => (
-                <div className={index === 0 ? "galleryItem wide" : "galleryItem"} key={item}><span>{item}</span></div>
-              ))}
+              {[
+  {
+    title: "Mulch Installation",
+    image: mulchProject,
+  },
+  {
+    title: "Tree Installation",
+    image: treeInstall,
+  },
+  {
+    title: "Landscape Bed Restoration",
+    image: heroLandscape,
+  },
+].map((item, index) => (
+  <div
+    className={index === 0 ? "galleryItem wide" : "galleryItem"}
+    key={item.title}
+    style={{
+      backgroundImage: `url(${item.image})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      minHeight: "320px",
+    }}
+  >
+    <span>{item.title}</span>
+  </div>
+))}
             </div>
           </div>
         </section>
