@@ -116,65 +116,166 @@ function App() {
           </div>
         </section>
 
-        <section id="services" className="lightSection">
-          <div className="container">
-            <div className="sectionHead">
-              <div>
-                <p className="label">Our Services</p>
-                <h2>Full-Service Lawn Care & Landscaping</h2>
-              </div>
-              <p>Built like the professional lawn and landscaping websites customers already trust, but styled with your premium black, gray, and gold brand.</p>
-            </div>
-            <div className="serviceGrid">
-              {services.map(service => {
-                const Icon = service.icon;
-                return (
-                  <div className="serviceCard" key={service.title}>
-                    <div className="serviceTop"><div className="iconBox"><Icon size={36} /></div></div>
-                    <div className="serviceBody">
-                      <h3>{service.title}</h3>
-                      <p>{service.text}</p>
-                      <a href="#contact">Learn More →</a>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+       <section id="services" className="servicesSection">
 
-        <section id="about" className="darkSection">
-          <div className="container aboutGrid">
-            <div className="imageBlock">
-              <div>
-                <p>Image Block</p>
-                <h3>Add a crew, truck, or finished job photo here</h3>
-              </div>
-            </div>
-            <div>
-              <p className="label gold">About Woodruff's</p>
-              <h2>Local Service With Big-Company Presentation.</h2>
-              <p className="bodyText">Woodruff's Lawn Care & Landscape serves Murfreesboro and surrounding areas with reliable lawn maintenance and landscaping. The goal is simple: make every property look cleaner, sharper, and better cared for.</p>
-              <div className="whyGrid">{why.map(item => <div key={item}><CheckCircle2 size={20} /> {item}</div>)}</div>
-            </div>
-          </div>
-        </section>
+  <div className="container">
 
-        <section className="blackSection">
-          <div className="container">
-            <div className="centerHead">
-              <p className="label gold">How It Works</p>
-              <h2>Simple. Clean. Professional.</h2>
-            </div>
-            <div className="processGrid">
-              {process.map(item => (
-                <div className="processCard" key={item.step}>
-                  <b>{item.step}</b><h3>{item.title}</h3><p>{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+    <div className="sectionHead">
+
+      <div>
+        <p className="label">OUR SERVICES</p>
+
+        <h2>
+          FULL-SERVICE <br />
+          LAWN CARE & <br />
+          LANDSCAPING
+        </h2>
+      </div>
+
+      <p>
+        Professional lawn and landscape services for
+        residential and commercial properties.
+      </p>
+
+    </div>
+
+    <div className="servicesGrid">
+
+      <div className="serviceCard">
+        <img
+          src="/e5501c4c-d622-40bb-8b3f-e0897cd6986d.PNG"
+          alt="Lawn Maintenance"
+        />
+
+        <h3>LAWN MAINTENANCE</h3>
+
+        <p>
+          Weekly and bi-weekly mowing, trimming,
+          edging, and cleanup.
+        </p>
+      </div>
+
+      <div className="serviceCard">
+        <img
+          src="/15E1ED6D-2030-4B93-92DA-EEA03352A700.jpg"
+          alt="Mulching"
+        />
+
+        <h3>MULCHING</h3>
+
+        <p>
+          Fresh mulch installs, bed edging,
+          and clean landscape refreshes.
+        </p>
+      </div>
+
+      <div className="serviceCard">
+        <img
+          src="/71818ff9-578f-4812-b78a-f6d3372b7158.jpg"
+          alt="Sod"
+        />
+
+        <h3>SOD</h3>
+
+        <p>
+          Fresh sod installs and lawn repair
+          for worn-out areas.
+        </p>
+      </div>
+
+      <div className="serviceCard">
+        <img
+          src="/07f7b923-dc07-4780-b6a5-dffa8b9126bb.PNG"
+          alt="Flower Beds"
+        />
+
+        <h3>FLOWER BED MAINTENANCE</h3>
+
+        <p>
+          Seasonal cleanup, shrub trimming,
+          and debris haul away.
+        </p>
+      </div>
+
+      <div className="serviceCard">
+        <img
+          src="/cd0bad58-e001-4cc5-a490-93e97a68a3fa.PNG"
+          alt="Aeration"
+        />
+
+        <h3>AERATION & SEEDING</h3>
+
+        <p>
+          Core aeration and overseeding
+          services for thicker lawns.
+        </p>
+      </div>
+
+      <div className="serviceCard">
+        <img
+          src="/71818ff9-578f-4812-b78a-f6d3372b7158.jpg"
+          alt="Commercial"
+        />
+
+        <h3>COMMERCIAL PROPERTIES</h3>
+
+        <p>
+          Reliable maintenance for businesses,
+          HOAs, and storefronts.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+        <section id="about" className="aboutSection">
+
+  <div className="container aboutGrid">
+
+    <div className="aboutImage">
+
+      <img
+        src="/07f7b923-dc07-4780-b6a5-dffa8b9126bb.PNG"
+        alt="Finished Lawn"
+      />
+
+    </div>
+
+    <div className="aboutContent">
+
+      <p className="label">ABOUT WOODRUFF'S</p>
+
+      <h2>
+        LOCAL SERVICE <br />
+        WITH BIG-COMPANY <br />
+        PRESENTATION.
+      </h2>
+
+      <p>
+        Woodruff's Lawn Care & Landscape serves
+        Murfreesboro and surrounding areas with
+        reliable lawn maintenance and landscaping.
+      </p>
+
+      <div className="aboutFeatures">
+
+        <div>Free estimates</div>
+        <div>Locally owned and operated</div>
+        <div>Residential and commercial service</div>
+        <div>Clean, professional curb appeal</div>
+        <div>Reliable scheduling</div>
+        <div>Licensed and insured</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 <section className="bg-[#111] px-5 py-20">
   <div className="mx-auto max-w-7xl">
     <div className="mb-10 text-center">
@@ -194,43 +295,62 @@ function App() {
     />
   </div>
 </section>
-        <section id="gallery" className="lightSection">
-          <div className="container">
-            <div className="sectionHead">
-              <div><p className="label">Gallery</p><h2>Show Off The Work</h2></div>
-              <Button href="#contact" variant="dark">Book Your Yard</Button>
-            </div>
-            <div className="galleryGrid">
-              {[
-  {
-    title: "Mulch Installation",
-    image: mulchProject,
-  },
-  {
-    title: "Tree Installation",
-    image: treeInstall,
-  },
-  {
-    title: "Landscape Bed Restoration",
-    image: heroLandscape,
-  },
-].map((item, index) => (
-  <div
-    className={index === 0 ? "galleryItem wide" : "galleryItem"}
-    key={item.title}
-    style={{
-      backgroundImage: `url(${item.image})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      minHeight: "320px",
-    }}
-  >
-    <span>{item.title}</span>
+       <section id="gallery" className="lightSection">
+
+  <div className="container">
+
+    <div className="sectionHead">
+
+      <div>
+        <p className="label">Gallery</p>
+        <h2>Show Off The Work</h2>
+      </div>
+
+      <Button href="#contact" variant="dark">
+        Book Your Yard
+      </Button>
+
+    </div>
+
+    <div className="galleryGrid">
+
+      <div className="galleryItem wide">
+        <img
+          src="/71818ff9-578f-4812-b78a-f6d3372b7158.jpg"
+          alt="Commercial Property"
+        />
+        <span>Commercial Property</span>
+      </div>
+
+      <div className="galleryItem">
+        <img
+          src="/e5501c4c-d622-40bb-8b3f-e0897cd6986d.PNG"
+          alt="Striped Lawn"
+        />
+        <span>Lawn Maintenance</span>
+      </div>
+
+      <div className="galleryItem">
+        <img
+          src="/07f7b923-dc07-4780-b6a5-dffa8b9126bb.PNG"
+          alt="Professional Mowing"
+        />
+        <span>Professional Mowing</span>
+      </div>
+
+      <div className="galleryItem">
+        <img
+          src="/cd0bad58-e001-4cc5-a490-93e97a68a3fa.PNG"
+          alt="Clean Striping"
+        />
+        <span>Clean Striping</span>
+      </div>
+
+    </div>
+
   </div>
-))}
-            </div>
-          </div>
-        </section>
+
+</section>
 
         <section id="reviews" className="darkSection">
           <div className="container reviewsGrid">
