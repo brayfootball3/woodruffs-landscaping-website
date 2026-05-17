@@ -6,7 +6,7 @@ import {
   Sprout, Flower2, CheckCircle2, Star, Droplets, Building2
 } from "lucide-react";
 import "./style.css";
-
+import landscapeVideo from "./assets/videos/landscape-showcase.mp4";
 const WoodruffsLogo = ({ className = "" }) => (
   <svg viewBox="0 0 160 260" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
     <defs>
