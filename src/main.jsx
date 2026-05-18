@@ -295,7 +295,7 @@ function App() {
     />
   </div>
 </section>
-       <section id="gallery" className="lightSection">
+      <section id="gallery" className="lightSection">
 
   <div className="container">
 
@@ -306,43 +306,27 @@ function App() {
         <h2>Show Off The Work</h2>
       </div>
 
-      <Button href="#contact" variant="dark">
-        Book Your Yard
-      </Button>
-
     </div>
 
     <div className="galleryGrid">
 
       <div className="galleryItem wide">
-        <img
-          src="/71818ff9-578f-4812-b78a-f6d3372b7158.jpg"
-          alt="Commercial Property"
-        />
+        <img src="/commercial.jpg" alt="Commercial Property" />
         <span>Commercial Property</span>
       </div>
 
       <div className="galleryItem">
-        <img
-          src="/e5501c4c-d622-40bb-8b3f-e0897cd6986d.PNG"
-          alt="Striped Lawn"
-        />
+        <img src="/stripes.jpg" alt="Lawn Maintenance" />
         <span>Lawn Maintenance</span>
       </div>
 
       <div className="galleryItem">
-        <img
-          src="/07f7b923-dc07-4780-b6a5-dffa8b9126bb.PNG"
-          alt="Professional Mowing"
-        />
+        <img src="/mower.jpg" alt="Professional Mowing" />
         <span>Professional Mowing</span>
       </div>
 
       <div className="galleryItem">
-        <img
-          src="/cd0bad58-e001-4cc5-a490-93e97a68a3fa.PNG"
-          alt="Clean Striping"
-        />
+        <img src="/cleanstripes.jpg" alt="Clean Striping" />
         <span>Clean Striping</span>
       </div>
 
@@ -351,7 +335,6 @@ function App() {
   </div>
 
 </section>
-
         <section id="reviews" className="darkSection">
           <div className="container reviewsGrid">
             <div>
