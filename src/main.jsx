@@ -89,7 +89,27 @@ function App() {
             <div><p className="label gold">About Woodruff's</p><h2>Local Service With Big-Company Presentation.</h2><p className="bodyText">Woodruff's Lawn Care & Landscape serves Murfreesboro and surrounding areas with reliable lawn maintenance and landscaping. The goal is simple: make every property look cleaner, sharper, and better cared for.</p><div className="whyGrid">{why.map(item => <div key={item}><CheckCircle2 size={20} /> {item}</div>)}</div></div>
           </div>
         </section>
+<section className="videoSection">
+  <div className="container">
+    <div className="sectionHead">
+      <div>
+        <p className="label">Featured Work</p>
+        <h2>Watch Our Work</h2>
+      </div>
+      <p>
+        A quick look at the clean lawn care and landscaping work from
+        Woodruff's Lawn Care & Landscape.
+      </p>
+    </div>
 
+    <video
+      src={landscapeVideo}
+      controls
+      playsInline
+      className="workVideo"
+    />
+  </div>
+</section>
         <section id="gallery" className="lightSection">
           <div className="container">
             <div className="sectionHead"><div><p className="label">Gallery</p><h2>Show Off The Work</h2></div><Button href="#contact" variant="dark">Book Your Yard</Button></div>
