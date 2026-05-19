@@ -14,7 +14,7 @@ import cleanStripes from "./assets/photos/clean-stripes.jpg";
 import mulchPhoto from "./assets/photos/mulch.jpg";
 import sodPhoto from "./assets/photos/sod.jpg";
 import treeJob from "./assets/photos/tree-job.jpg";
-
+import landscapeVideo from "./assets/videos/landscape-showcase.mp4";
 const services = [
   { icon: Scissors, title: "Lawn Maintenance", image: stripedLawn, text: "Weekly and bi-weekly mowing, trimming, edging, and cleanup for a sharp finished look." },
   { icon: Leaf, title: "Mulching", image: mulchPhoto, text: "Fresh mulch installs, clean bed lines, weed cleanup, and premium landscape refreshes." },
